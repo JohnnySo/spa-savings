@@ -1,0 +1,77 @@
+.gridContainer {
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
+
+.twTable {
+  @apply table-auto;
+  @apply w-full;
+  @apply my-2;
+  @apply border-separate;
+  @apply border-spacing-0;
+  @apply border rounded-lg;
+  @apply bg-white text-left;
+  @apply text-sm;
+  @apply text-gray-500;
+}
+
+.twTableHead {
+  @apply bg-gray-100;
+}
+
+.twTableFirstColumn {
+  @apply font-semibold;
+  @apply text-sm;
+  @apply text-gray-900;
+  @apply backdrop-blur;
+  @apply border-separate;
+  @apply rounded-tl-lg;
+  @apply text-left;
+  @apply pl-8;
+  @apply pr-3;
+  @apply py-3.5;
+  @apply bg-white/75;
+  @apply border-gray-300;
+  @apply border-b;
+  @apply z-10;
+  @apply top-0;
+  @apply sticky;
+}
+
+.twTableColumn {
+  @apply font-semibold;
+  @apply text-sm;
+  @apply text-gray-900;
+  @apply backdrop-blur;
+  @apply text-left;
+  @apply px-3;
+  @apply pr-3;
+  @apply py-3.5;
+  @apply bg-white/75;
+  @apply border-gray-300;
+  @apply border-b;
+  @apply z-10;
+  @apply top-0;
+  @apply sticky;
+}
+
+.twTableFirstRow {
+  @apply truncate;
+  @apply text-sm;
+  @apply pl-8;
+  @apply pr-3;
+  @apply py-4;
+  @apply border-gray-200;
+  @apply border-b;
+  @apply whitespace-nowrap;
+}
+
+.twTableRow {
+  @apply max-w-md;
+  @apply truncate;
+  @apply text-sm;
+  @apply px-3;
+  @apply py-4;
+  @apply border-gray-200;
+  @apply border-b;
+  @apply whitespace-nowrap;
+}
