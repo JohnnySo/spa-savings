@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react'
 import Dropzone from 'react-dropzone'
-import ReadExcelFile from '@/components/modal/modalAddData/ReadExcelFile'
+import ReadExcelFile from '@/components/modal/import/ReadExcelFile'
 import { CloudUpIcon } from '@/components/Icons'
 
 export default function AddFileDropZone ({ onDataLoaded, onFileAdded }) {

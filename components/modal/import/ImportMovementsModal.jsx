@@ -1,16 +1,16 @@
 'use client'
 
 import { useTransition, useRef, useState } from 'react'
-import AddFileDropZone from '@/components/modal/modalAddData/AddFileDropZone'
+import AddFileDropZone from '@/components/modal/import/AddFileDropZone'
 import useInMemoryPagination from '@/hooks/useInMemoryPagination/useInMemoryPagination'
-import FileContent from '@/components/modal/modalAddData/FileContent'
+import FileContent from '@/components/modal/import/FileContent'
 import { Dialog, Transition } from '@headlessui/react'
 import TertiaryButton from '@/components/button/TertiaryButton'
 import SuccessButton from '@/components/button/SuccessButton'
 import Modal from '@/components/modal/Modal'
 import { importFileInteraction } from '@/app/savings/server-actions'
 
-export default function ModalAddData ({ open, setOpen }) {
+export default function ImportMovementsModal ({ open, setOpen }) {
   const errorRef = useRef()
   const [dataLoaded, setDataLoaded] = useState(null)
   const [file, setFile] = useState(null)

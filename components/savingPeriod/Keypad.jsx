@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import CustomModalAddData from '@/components/modal/modalAddData/ModalAddData'
+import ImportMovementsModal from '@/components/modal/import/ImportMovementsModal'
 import PrimaryButton from '@/components/button/PrimaryButton'
 
 export default function Keypad ({ className = '' }) {
@@ -9,7 +9,7 @@ export default function Keypad ({ className = '' }) {
   return (
     <div className={className}>
       <PrimaryButton onClick={() => setShow(true)}>Importar</PrimaryButton>
-      <CustomModalAddData open={show} setOpen={setShow} />
+      <ImportMovementsModal open={show} setOpen={setShow} />
     </div>
   )
 }
